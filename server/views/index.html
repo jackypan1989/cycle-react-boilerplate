@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta name="description" content="Counter Example"/>
+  <title>Cycle-react</title>
+</head>
+<body>
+  <div id="app"></div>
+  <script type="text/javascript">
+    (function() {
+      var app = document.createElement('script'); 
+
+      var src = '//localhost:8888/build/app.js';
+      // if (window.location.hostname !== 'localhost') {
+      //   src = '/build/app.js';
+      // }
+
+      app.type = 'text/javascript'; 
+      app.src = src;
+      var s = document.getElementsByTagName('script')[0]; 
+      s.parentNode.insertBefore(app, s);
+    })();
+  </script>
+</body>
